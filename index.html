@@ -32,10 +32,15 @@
         }
         #output {
             display: none;
-            text-align: left;
-            margin-top: 20px;
-            padding: 20px;
-            border: 1px solid #ccc;
+    text-align: left;
+    margin-top: 20px;
+    padding: 30px;
+    border: 1px solid #ccc;
+    width: auto;
+    max-width: 800px;
+    margin: auto;
+    margin-top: 40px;
+    background: #fefefe;
         }
         #output p {
             margin: 10px 0;
@@ -68,8 +73,9 @@ background: rgba(255,255,0,0.5);
     <input type="text" id="ssidInput">
     <button onclick="lookupSSID()">Submit</button>
 
-    <div id="output">
-        <h2>Deatils for the SID entered</h2>
+   <div id="output">
+    <div id="output-hidden" style="display: none;">
+        <h2>Details for the SID entered</h2>
         <p>Your entered SID is: <span id="ssid"></span></p>
         <p>Registered email id with school is: <span id="email"></span></p>
         <p>Your Child's school is: <span id="school"></span></p>
@@ -77,23 +83,18 @@ background: rgba(255,255,0,0.5);
         <p>Books for your child: <span id="books"></span></p>
 
 <hr/>
-<p>NOTE: On clicking link below, if you see the message <i>"Hooray!!! You have successfully created personalised story books for your child. These lovely books will be gifted to the children by their respective schools. Thank you."</i>, you donot have to do anything more 👍</p> 
-
-	<p>Personalization link is: <a href="#" id="personalizationLink" onclick="openPersonalizationLink()"></a></p>
-<hr/>
-        <p>An explainer video is here to help you: <a href="https://youtu.be/Esp4u1j5-gU" target="_blank">Watch Video</a></p>
-        <p>Deadline: September 16, 2023 (Saturday) EOD</p>
-        <p>Questions? Contact <a href="mailto:hello@nijikart.com">hello@nijikart.com</a> if you have further queries.</p>
-        <p>Thanks for making this special for our kids! 🌟</p>
-
-	    <hr/>
-	    <!-- Add this code at the end of your HTML content -->
-<h2>Regarding Address</h2>
-<p> Note: You donot need to fill anything here. Just press "Confirm your order" button at the bottom as shown in image below:</p>
-<div style="max-width: 100%; overflow: hidden;">
-    <img src="Screenshot_20230904-213003-661.png" alt="Screenshot" style="max-width: 100%; height: auto;">
 </div>
-    </div>
+<p> Fill data in <b>BOTH</b> the books seperately at the below link: <a href="#" id="personalizationLink" onclick="openPersonalizationLink()"></a>
+
+<hr style="margin: 30px 0"/>
+        <p>An explainer video is here to help you: <a href="https://youtu.be/Esp4u1j5-gU" target="_blank">Watch Video</a></p>
+<p> Note: After personalizing both the books, when you reach the address section, you donot need to fill anything. Just press "Confirm your order" button at the bottom of that page</p>
+        <p>Deadline: September 24, 2023 (Saturday) EOD</p>
+        <p>Questions? Contact <a href="mailto:hello@nijikart.com">hello@nijikart.com</a> or call +91-9665822220/+91-9833665112</p>
+        <p>Thanks for making this special for our kids! 🌟</p> 
+
+   </div>
+
 
     <script>
 
